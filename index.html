@@ -3,54 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SARS Grup — Ankara merkezli, kamu kurum ve kuruluşlarının ihtiyaç duyduğu yedek parça, akü, yağ, kimyasal ürün ve çeşitli malzeme ve hizmetlerin tedarikinde çözüm ortağı.">
+  <meta name="description" content="SARS Grup — Ankara merkezli, kamu kurum ve kuruluşlarının ihtiyaç duyduğu yedek parça, akü, yağ, kimyasal ürün, temizlik malzemeleri ve çeşitli malzeme ve hizmetlerin tedarikinde çözüm ortağı.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0b1f3a">
   <title>SARS Grup | Kamu Tedarik ve Çözüm Ortağı</title>
   <link rel="stylesheet" href="style.css">
 
-<style id="contact-fix">
-/* İletişim bölümü: lacivert zemin + beyaz metin */
-.contact-section {
-  background: #0f2742 !important;
-  color: #fff !important;
-}
-.contact-section h2,
-.contact-section p,
-.contact-section span,
-.contact-section strong {
-  color: #fff !important;
-}
-.contact-section .section-kicker {
-  color: #d8b45a !important;
-}
-.contact-section .contact-card {
-  background: rgba(255,255,255,.08) !important;
-  border: 1px solid rgba(255,255,255,.16) !important;
-}
-.contact-section .contact-row {
-  border-bottom-color: rgba(255,255,255,.14) !important;
-}
-.contact-section .contact-label {
-  color: #cbd5e1 !important;
-}
-.contact-section a {
-  color: #d8b45a !important;
-}
-</style>
+  <style id="index-fixes">
+    /* Logo */
+    .brand-logo {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      display: block;
+      flex: 0 0 auto;
+    }
 
+    /* İletişim alanındaki etiketleri okunaklı ve aralıklı tut */
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .contact-label {
+      flex: 0 0 auto;
+      min-width: 110px;
+    }
+
+    .contact-label::after {
+      content: ":";
+      margin-left: 4px;
+    }
+
+    .contact-row > a,
+    .contact-row > span:not(.contact-label) {
+      line-height: 1.6;
+    }
+
+    .contact-row.address-row {
+      align-items: flex-start;
+    }
+
+    .contact-row.address-row > span:not(.contact-label) {
+      max-width: 520px;
+    }
+  </style>
 </head>
 
 <body>
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="SARS Grup ana sayfa">
-      <span class="brand-mark">S</span>
+      <img class="brand-logo" src="logo.png" alt="SARS Grup logosu">
       <span class="brand-text">
         <strong>SARS GRUP</strong>
         <small>TEDARİK &amp; ÇÖZÜM ORTAĞI</small>
       </span>
     </a>
+
     <nav class="nav-links" aria-label="Ana menü">
       <a href="#kurumsal">Kurumsal</a>
       <a href="#hizmetler">Hizmetler</a>
@@ -72,6 +83,7 @@
           hizmetlerin uygun koşullarda tedarik edilmesi, araştırılması ve
           temin edilmesi konusunda çözüm odaklı hizmet sunar.
         </p>
+
         <div class="hero-actions">
           <a class="button button-primary" href="#iletisim">Bizimle İletişime Geçin</a>
           <a class="button button-outline" href="#hizmetler">Hizmetlerimizi İnceleyin</a>
@@ -79,14 +91,20 @@
       </div>
 
       <div class="hero-panel">
-        <div class="hero-panel-top"><span class="status-dot"></span><span>Kurumsal Tedarik</span></div>
+        <div class="hero-panel-top">
+          <span class="status-dot"></span>
+          <span>Kurumsal Tedarik</span>
+        </div>
+
         <h2>Aradığınız ürün veya hizmet için doğru kaynağa ulaşın.</h2>
         <p>
           İhtiyacınızı değerlendiriyor, piyasayı araştırıyor, uygun tedarik
           kaynaklarını belirliyor ve talep edilen malzeme veya hizmetin temini
           için süreci yönetiyoruz.
         </p>
+
         <div class="hero-panel-line"></div>
+
         <div class="hero-mini-grid">
           <div><strong>01</strong><span>İhtiyaç Analizi</span></div>
           <div><strong>02</strong><span>Tedarik Araştırması</span></div>
@@ -104,6 +122,7 @@
           <span class="section-kicker">KURUMSAL</span>
           <h2>İhtiyaçtan çözüme,<br>güvenilir tedarik.</h2>
         </div>
+
         <p>
           SARS Grup, Ankara merkezli bir limited şirket olarak kamu kurum ve
           kuruluşlarının ihtiyaç duyduğu ürün ve hizmetlerin tedarik
@@ -115,17 +134,28 @@
         <article class="about-card">
           <div class="card-number">01</div>
           <h3>İhtiyacı Anlıyoruz</h3>
-          <p>Talep edilen ürün veya hizmetin teknik ve kullanım gereksinimlerini değerlendirerek ihtiyaca uygun çözüm oluşturuyoruz.</p>
+          <p>
+            Talep edilen ürün veya hizmetin teknik ve kullanım gereksinimlerini
+            değerlendirerek ihtiyaca uygun çözüm oluşturuyoruz.
+          </p>
         </article>
+
         <article class="about-card">
           <div class="card-number">02</div>
           <h3>Piyasayı Araştırıyoruz</h3>
-          <p>İstenen malzeme veya hizmeti farklı tedarik kaynakları üzerinden araştırıyor, uygun seçenekleri belirliyoruz.</p>
+          <p>
+            İstenen malzeme veya hizmeti farklı tedarik kaynakları üzerinden
+            araştırıyor, uygun seçenekleri belirliyoruz.
+          </p>
         </article>
+
         <article class="about-card">
           <div class="card-number">03</div>
           <h3>Uygun Kaynağa Ulaşıyoruz</h3>
-          <p>Ürün veya hizmetin temin edilebileceği güvenilir kaynakları değerlendirerek tedarik sürecini yürütüyoruz.</p>
+          <p>
+            Ürün veya hizmetin temin edilebileceği güvenilir kaynakları
+            değerlendirerek tedarik sürecini yürütüyoruz.
+          </p>
         </article>
       </div>
     </div>
@@ -138,6 +168,7 @@
           <span class="section-kicker">HİZMETLERİMİZ</span>
           <h2>Çeşitli ihtiyaçlara<br>tek tedarik noktası.</h2>
         </div>
+
         <p>
           Kamu kuruluşlarının farklı alanlardaki malzeme ve hizmet ihtiyaçlarına
           yönelik araştırma, tedarik ve teslim süreçlerinde çözüm üretiriz.
@@ -145,12 +176,68 @@
       </div>
 
       <div class="service-grid">
-        <article class="service-card"><span class="service-icon">01</span><h3>Yedek Parça</h3><p>Çeşitli araç, makine, ekipman ve sistemlere yönelik yedek parçaların araştırılması ve tedarik edilmesi.</p></article>
-        <article class="service-card"><span class="service-icon">02</span><h3>Akü ve Enerji Ürünleri</h3><p>Araç, makine, ekipman ve farklı kullanım alanlarına yönelik akü ve ilgili ürünlerin uygun kaynaklardan temini.</p></article>
-        <article class="service-card"><span class="service-icon">03</span><h3>Yağ ve Kimyasal Ürünler</h3><p>İhtiyaca göre belirlenen yağ, kimyasal ve benzeri teknik ürünlerin araştırılması ve tedarik süreçlerinin yürütülmesi.</p></article>
-        <article class="service-card"><span class="service-icon">04</span><h3>Özel Ürün Tedariki</h3><p>Belirli teknik özelliklere veya özel şartlara sahip malzemeler için tedarik araştırması.</p></article>
-        <article class="service-card"><span class="service-icon">05</span><h3>Malzeme ve Ekipman</h3><p>Kamu kuruluşlarının operasyonel ihtiyaçlarına yönelik çeşitli malzeme, ekipman ve sarf ürünlerinin temini.</p></article>
-        <article class="service-card"><span class="service-icon">06</span><h3>İhtiyaca Özel Araştırma</h3><p>Piyasada doğrudan bulunmayan ürün veya hizmetler için alternatif tedarik kaynaklarını araştırarak çözüm geliştiriyoruz.</p></article>
+        <article class="service-card">
+          <span class="service-icon">01</span>
+          <h3>Yedek Parça</h3>
+          <p>
+            Çeşitli araç, makine, ekipman ve sistemlere yönelik yedek parçaların
+            araştırılması ve tedarik edilmesi.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">02</span>
+          <h3>Akü ve Enerji Ürünleri</h3>
+          <p>
+            Araç, makine, ekipman ve farklı kullanım alanlarına yönelik akü ve
+            ilgili ürünlerin uygun kaynaklardan temini.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">03</span>
+          <h3>Yağ ve Kimyasal Ürünler</h3>
+          <p>
+            İhtiyaca göre belirlenen yağ, kimyasal ve benzeri teknik ürünlerin
+            araştırılması ve tedarik süreçlerinin yürütülmesi.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">04</span>
+          <h3>Temizlik Malzemeleri</h3>
+          <p>
+            Kamu kurum ve kuruluşlarının ihtiyaç duyduğu temizlik ürünleri,
+            sarf malzemeleri ve hijyen ürünlerinin tedarik edilmesi.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">05</span>
+          <h3>Malzeme ve Ekipman</h3>
+          <p>
+            Kamu kuruluşlarının operasyonel ihtiyaçlarına yönelik çeşitli
+            malzeme, ekipman ve sarf ürünlerinin temini.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">06</span>
+          <h3>Özel Ürün Tedariki</h3>
+          <p>
+            Belirli teknik özelliklere veya özel şartlara sahip malzemeler için
+            tedarik araştırması ve uygun kaynakların bulunması.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">07</span>
+          <h3>İhtiyaca Özel Araştırma</h3>
+          <p>
+            Piyasada doğrudan bulunmayan ürün veya hizmetler için alternatif
+            tedarik kaynaklarını araştırarak çözüm geliştiriyoruz.
+          </p>
+        </article>
       </div>
     </div>
   </section>
@@ -162,6 +249,7 @@
           <span class="section-kicker">ÇÖZÜM ALANLARI</span>
           <h2>Kamu ihtiyaçlarına<br>odaklanan yapı.</h2>
         </div>
+
         <p>
           SARS Grup'un çalışma modeli, farklı kamu kurumlarının farklı
           ihtiyaçlarına uyarlanabilecek esnek bir tedarik yaklaşımına dayanır.
@@ -169,10 +257,60 @@
       </div>
 
       <div class="solution-list">
-        <div class="solution-item"><span>01</span><div><h3>Kamu Kurumları</h3><p>Kamu kurum ve kuruluşlarının malzeme ve hizmet ihtiyaçları için tedarik araştırması ve çözüm geliştirme.</p></div></div>
-        <div class="solution-item"><span>02</span><div><h3>Araç ve Makine İhtiyaçları</h3><p>Araç, iş makinesi, makine ve ekipmanlarda kullanılabilecek yedek parça, akü ve ilgili ürünlerin tedariki.</p></div></div>
-        <div class="solution-item"><span>03</span><div><h3>Teknik Malzeme</h3><p>Teknik şartlara veya belirli ürün özelliklerine göre araştırılması gereken malzeme ve ekipmanların temini.</p></div></div>
-        <div class="solution-item"><span>04</span><div><h3>Özel Tedarik Talepleri</h3><p>Piyasada kolay bulunmayan veya farklı kaynaklardan araştırılması gereken ürün ve hizmetler için çözüm.</p></div></div>
+        <div class="solution-item">
+          <span>01</span>
+          <div>
+            <h3>Kamu Kurumları</h3>
+            <p>
+              Kamu kurum ve kuruluşlarının malzeme ve hizmet ihtiyaçları için
+              tedarik araştırması ve çözüm geliştirme.
+            </p>
+          </div>
+        </div>
+
+        <div class="solution-item">
+          <span>02</span>
+          <div>
+            <h3>Araç ve Makine İhtiyaçları</h3>
+            <p>
+              Araç, iş makinesi, makine ve ekipmanlarda kullanılabilecek yedek
+              parça, akü ve ilgili ürünlerin tedariki.
+            </p>
+          </div>
+        </div>
+
+        <div class="solution-item">
+          <span>03</span>
+          <div>
+            <h3>Teknik Malzeme</h3>
+            <p>
+              Teknik şartlara veya belirli ürün özelliklerine göre araştırılması
+              gereken malzeme ve ekipmanların temini.
+            </p>
+          </div>
+        </div>
+
+        <div class="solution-item">
+          <span>04</span>
+          <div>
+            <h3>Temizlik ve Hijyen Ürünleri</h3>
+            <p>
+              Kurumların günlük kullanımına yönelik temizlik, hijyen ve sarf
+              malzemelerinin tedarik edilmesi.
+            </p>
+          </div>
+        </div>
+
+        <div class="solution-item">
+          <span>05</span>
+          <div>
+            <h3>Özel Tedarik Talepleri</h3>
+            <p>
+              Piyasada kolay bulunmayan veya farklı kaynaklardan araştırılması
+              gereken ürün ve hizmetler için çözüm.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -182,14 +320,36 @@
       <div class="process-intro">
         <span class="section-kicker">ÇALIŞMA SÜRECİMİZ</span>
         <h2>Talebinizi çözüme<br>dönüştürüyoruz.</h2>
-        <p>Her tedarik ihtiyacını kendi şartları içinde değerlendiriyor, ihtiyaçtan teslimata kadar düzenli bir süreç izliyoruz.</p>
+        <p>
+          Her tedarik ihtiyacını kendi şartları içinde değerlendiriyor,
+          ihtiyaçtan teslimata kadar düzenli bir süreç izliyoruz.
+        </p>
       </div>
 
       <div class="process-grid">
-        <div class="process-step"><div class="process-index">01</div><h3>Talebi Alıyoruz</h3><p>Ürün, hizmet veya teknik ihtiyaç hakkında gerekli bilgileri alıyoruz.</p></div>
-        <div class="process-step"><div class="process-index">02</div><h3>Araştırıyoruz</h3><p>İhtiyaca uygun ürün ve tedarik kaynaklarını araştırıyoruz.</p></div>
-        <div class="process-step"><div class="process-index">03</div><h3>Değerlendiriyoruz</h3><p>Uygunluk, şartlar ve tedarik imkanlarını değerlendiriyoruz.</p></div>
-        <div class="process-step"><div class="process-index">04</div><h3>Tedarik Ediyoruz</h3><p>Uygun çözüm doğrultusunda tedarik ve teslim sürecini yürütüyoruz.</p></div>
+        <div class="process-step">
+          <div class="process-index">01</div>
+          <h3>Talebi Alıyoruz</h3>
+          <p>Ürün, hizmet veya teknik ihtiyaç hakkında gerekli bilgileri alıyoruz.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-index">02</div>
+          <h3>Araştırıyoruz</h3>
+          <p>İhtiyaca uygun ürün ve tedarik kaynaklarını araştırıyoruz.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-index">03</div>
+          <h3>Değerlendiriyoruz</h3>
+          <p>Uygunluk, şartlar ve tedarik imkanlarını değerlendiriyoruz.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="process-index">04</div>
+          <h3>Tedarik Ediyoruz</h3>
+          <p>Uygun çözüm doğrultusunda tedarik ve teslim sürecini yürütüyoruz.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -201,11 +361,39 @@
           <span class="section-kicker">NEDEN SARS GRUP?</span>
           <h2>Aradığınız ürünün<br>peşine düşeriz.</h2>
         </div>
+
         <div class="trust-points">
-          <div class="trust-point"><strong>Çözüm odaklı yaklaşım</strong><p>Sadece ürün satmak yerine, ihtiyaç için uygun tedarik çözümünü bulmaya odaklanıyoruz.</p></div>
-          <div class="trust-point"><strong>Esnek tedarik modeli</strong><p>İhtiyacın niteliğine göre farklı tedarik kaynaklarını araştırabiliyoruz.</p></div>
-          <div class="trust-point"><strong>Kurumsal çalışma anlayışı</strong><p>Kamu kurumlarının ihtiyaçlarını ve tedarik süreçlerinin gerektirdiği düzeni gözeterek hareket ediyoruz.</p></div>
-          <div class="trust-point"><strong>Uygun koşulları araştırma</strong><p>Talep edilen ürün veya hizmet için mümkün olan uygun tedarik seçeneklerini araştırıyoruz.</p></div>
+          <div class="trust-point">
+            <strong>Çözüm odaklı yaklaşım</strong>
+            <p>
+              Sadece ürün satmak yerine, ihtiyaç için uygun tedarik çözümünü
+              bulmaya odaklanıyoruz.
+            </p>
+          </div>
+
+          <div class="trust-point">
+            <strong>Esnek tedarik modeli</strong>
+            <p>
+              İhtiyacın niteliğine göre farklı tedarik kaynaklarını
+              araştırabiliyoruz.
+            </p>
+          </div>
+
+          <div class="trust-point">
+            <strong>Kurumsal çalışma anlayışı</strong>
+            <p>
+              Kamu kurumlarının ihtiyaçlarını ve tedarik süreçlerinin gerektirdiği
+              düzeni gözeterek hareket ediyoruz.
+            </p>
+          </div>
+
+          <div class="trust-point">
+            <strong>Uygun koşulları araştırma</strong>
+            <p>
+              Talep edilen ürün veya hizmet için mümkün olan uygun tedarik
+              seçeneklerini araştırıyoruz.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -216,8 +404,12 @@
       <div>
         <span class="section-kicker">BİRLİKTE ÇALIŞALIM</span>
         <h2>Bir ürün veya hizmet ihtiyacınız mı var?</h2>
-        <p>Talebinizi bize iletin. İhtiyacınıza uygun tedarik imkanlarını birlikte değerlendirelim.</p>
+        <p>
+          Talebinizi bize iletin. İhtiyacınıza uygun tedarik imkanlarını birlikte
+          değerlendirelim.
+        </p>
       </div>
+
       <a class="button button-light" href="#iletisim">İletişime Geçin</a>
     </div>
   </section>
@@ -235,10 +427,28 @@
         </div>
 
         <div class="contact-card">
-          <div class="contact-row"><span class="contact-label">Telefon</span><a href="tel:+905323930446">0 532 393 04 46</a></div>
-          <div class="contact-row"><span class="contact-label">E-posta</span><a href="mailto:info@sars-grup.com">info@sars-grup.com</a></div>
-          <div class="contact-row"><span class="contact-label">Adres</span><span>YUNUS EMRE MAH. BAHTIŞEN SK. İLKÇAĞRI SİTESİ NO: 3 İÇ KAPI NO: 4 SİNCAN/ ANKARA</span>
-<div class="contact-row"><span class="contact-label">Vergi Kimlik No</span><span>7511117685</span></div></div>
+          <div class="contact-row">
+            <span class="contact-label">Telefon</span>
+            <a href="tel:+905323930446">0 532 393 04 46</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">E-posta</span>
+            <a href="mailto:info@sars-grup.com">info@sars-grup.com</a>
+          </div>
+
+          <div class="contact-row address-row">
+            <span class="contact-label">Adres</span>
+            <span>
+              YUNUS EMRE MAH. BAHTIŞEN SK. İLKÇAĞRI SİTESİ NO: 3
+              İÇ KAPI NO: 4 SİNCAN / ANKARA
+            </span>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-label">Vergi Kimlik No</span>
+            <span>7511117685</span>
+          </div>
         </div>
       </div>
     </div>
@@ -272,5 +482,6 @@
     <span>© 2026 Tüm hakları saklıdır.</span>
   </div>
 </footer>
+
 </body>
 </html>
