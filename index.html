@@ -2,11 +2,1354 @@
 <html lang="tr">
 <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SARS Grup</title>
+
+    <meta name="description"
+          content="SARS Grup, Ankara merkezli bir tedarik ve hizmet şirketidir. Kamu kurumlarının ihtiyaç duyduğu yedek parça, akü, yağlayıcı, kimyasal ürün ve çeşitli malzemelerin araştırılması, tedariki ve teslim süreçlerinde hizmet sunar.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="SARS Grup">
+
+    <link rel="canonical" href="https://sars-grup.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SARS Grup | Tedarik ve Çözüm Ortağınız">
+    <meta property="og:description"
+          content="Kamu kurumlarının ihtiyaç duyduğu ürün ve hizmetlerin araştırılması, tedariki ve teslim süreçlerinde güvenilir çözüm ortağı.">
+    <meta property="og:url" content="https://sars-grup.com/">
+    <meta property="og:site_name" content="SARS Grup">
+
+    <title>SARS Grup | Tedarik ve Çözüm Ortağınız</title>
+
+    <style>
+        :root {
+            --navy: #0b1f3a;
+            --navy-dark: #071426;
+            --blue: #163d68;
+            --gold: #c6a15b;
+            --gold-light: #e3c98b;
+            --white: #ffffff;
+            --light: #f5f7fa;
+            --light-blue: #edf3f9;
+            --text: #263447;
+            --muted: #66758a;
+            --border: #dce3eb;
+            --shadow: 0 18px 45px rgba(7, 20, 38, 0.10);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(7, 20, 38, 0.97);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .nav {
+            min-height: 78px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 13px;
+
+            color: var(--white);
+
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+
+        .brand-mark {
+            width: 42px;
+            height: 42px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid rgba(227,201,139,0.65);
+            border-radius: 8px;
+
+            color: var(--gold-light);
+
+            font-size: 1.05rem;
+            font-weight: 800;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            color: #dbe4ef;
+
+            font-size: 0.94rem;
+        }
+
+        .nav-links a {
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-light);
+        }
+
+        .nav-button {
+            padding: 10px 18px;
+
+            border: 1px solid rgba(227,201,139,0.65);
+            border-radius: 5px;
+
+            color: var(--gold-light);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy-dark) 0%,
+                    var(--navy) 55%,
+                    #12385f 100%
+                );
+
+            color: var(--white);
+
+            padding: 110px 0 115px;
+        }
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+            right: -180px;
+            top: -220px;
+
+            width: 520px;
+            height: 520px;
+
+            border: 1px solid rgba(227,201,139,0.20);
+            border-radius: 50%;
+        }
+
+        .hero-grid {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+
+            gap: 70px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 20px;
+
+            color: var(--gold-light);
+
+            font-size: 0.82rem;
+            font-weight: 700;
+
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            max-width: 800px;
+
+            margin-bottom: 24px;
+
+            font-size: clamp(2.7rem, 5vw, 4.5rem);
+            line-height: 1.08;
+
+            letter-spacing: -0.035em;
+        }
+
+        .hero h1 span {
+            color: var(--gold-light);
+        }
+
+        .hero-text {
+            max-width: 720px;
+
+            color: #d9e3ef;
+
+            font-size: 1.14rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            margin-top: 34px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 48px;
+            padding: 0 23px;
+
+            border-radius: 5px;
+
+            font-weight: 700;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            background: var(--gold);
+            color: #111d2c;
+        }
+
+        .button-primary:hover {
+            background: var(--gold-light);
+        }
+
+        .button-outline {
+            border: 1px solid rgba(255,255,255,0.35);
+            color: var(--white);
+        }
+
+        .button-outline:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .hero-panel {
+            padding: 34px;
+
+            background: rgba(255,255,255,0.06);
+
+            border: 1px solid rgba(255,255,255,0.13);
+            border-radius: 10px;
+
+            box-shadow: var(--shadow);
+        }
+
+        .hero-panel-title {
+            margin-bottom: 20px;
+
+            color: var(--gold-light);
+
+            font-size: 0.82rem;
+            font-weight: 700;
+
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .hero-panel ul {
+            list-style: none;
+        }
+
+        .hero-panel li {
+            position: relative;
+
+            padding: 13px 0 13px 25px;
+
+            border-bottom: 1px solid rgba(255,255,255,0.09);
+
+            color: #e1e9f2;
+        }
+
+        .hero-panel li:last-child {
+            border-bottom: 0;
+        }
+
+        .hero-panel li::before {
+            content: "✓";
+
+            position: absolute;
+            left: 0;
+
+            color: var(--gold-light);
+            font-weight: 700;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-light {
+            background: var(--light);
+        }
+
+        .section-blue {
+            background: var(--light-blue);
+        }
+
+        .section-heading {
+            max-width: 760px;
+
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            display: block;
+
+            margin-bottom: 12px;
+
+            color: var(--blue);
+
+            font-size: 0.8rem;
+            font-weight: 800;
+
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            margin-bottom: 16px;
+
+            color: var(--navy);
+
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1.15;
+        }
+
+        .section-heading p {
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: var(--muted);
+        }
+
+        .about-highlight {
+            padding: 30px;
+
+            background: var(--navy);
+            color: var(--white);
+
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-highlight strong {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: var(--gold-light);
+
+            font-size: 1.2rem;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .service-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .service-card {
+            min-height: 245px;
+
+            padding: 30px;
+
+            background: var(--white);
+
+            border: 1px solid var(--border);
+            border-radius: 8px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .service-number {
+            display: inline-flex;
+
+            width: 42px;
+            height: 42px;
+
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 20px;
+
+            background: var(--navy);
+            color: var(--gold-light);
+
+            border-radius: 6px;
+
+            font-size: 0.85rem;
+            font-weight: 800;
+        }
+
+        .service-card h3 {
+            margin-bottom: 12px;
+
+            color: var(--navy);
+
+            font-size: 1.15rem;
+        }
+
+        .service-card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        /* =========================
+           PROCESS
+        ========================= */
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .process-item {
+            position: relative;
+
+            padding: 25px;
+
+            border-top: 3px solid var(--gold);
+
+            background: var(--white);
+        }
+
+        .process-item span {
+            display: block;
+
+            margin-bottom: 12px;
+
+            color: var(--blue);
+
+            font-size: 0.78rem;
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+        }
+
+        .process-item h3 {
+            margin-bottom: 10px;
+
+            color: var(--navy);
+            font-size: 1.05rem;
+        }
+
+        .process-item p {
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        /* =========================
+           PRINCIPLES
+        ========================= */
+
+        .principles {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .principle {
+            padding: 32px;
+
+            border: 1px solid var(--border);
+            border-radius: 8px;
+
+            background: var(--white);
+        }
+
+        .principle h3 {
+            margin-bottom: 10px;
+
+            color: var(--navy);
+        }
+
+        .principle p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--navy-dark),
+                    var(--blue)
+                );
+
+            color: var(--white);
+
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 15px;
+
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cta p {
+            max-width: 700px;
+
+            margin: 0 auto 30px;
+
+            color: #d8e2ed;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .site-footer {
+            padding: 55px 0 30px;
+
+            background: #050f1d;
+
+            color: #b9c5d3;
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 40px;
+
+            padding-bottom: 35px;
+
+            border-bottom: 1px solid rgba(255,255,255,0.09);
+        }
+
+        .footer-brand {
+            color: var(--white);
+
+            font-size: 1.25rem;
+            font-weight: 800;
+
+            margin-bottom: 10px;
+        }
+
+        .footer-description {
+            max-width: 480px;
+
+            font-size: 0.92rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            gap: 25px;
+            flex-wrap: wrap;
+
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+        }
+
+        .copyright {
+            padding-top: 25px;
+
+            color: #718096;
+
+            font-size: 0.82rem;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .nav {
+                min-height: 70px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 80px 0;
+            }
+
+            .hero-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .process-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .principles {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .footer-links {
+                justify-content: flex-start;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: min(100% - 28px, 1180px);
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.55rem;
+            }
+
+            .hero-panel {
+                padding: 25px;
+            }
+
+            .service-grid,
+            .process-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>SARS Grup</h1>
-    <p>Resmi web sitesi hazırlanıyor.</p>
+
+<header class="site-header">
+
+    <div class="container nav">
+
+        <a class="brand" href="#top" aria-label="SARS Grup ana sayfa">
+
+            <span class="brand-mark">SG</span>
+
+            <span>SARS GRUP</span>
+
+        </a>
+
+        <nav class="nav-links" aria-label="Ana menü">
+
+            <a href="#kurumsal">Kurumsal</a>
+
+            <a href="#faaliyetler">Faaliyet Alanları</a>
+
+            <a href="#surec">Çalışma Sürecimiz</a>
+
+            <a href="#iletisim" class="nav-button">İletişim</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main id="top">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <div>
+
+                <span class="eyebrow">
+                    Tedarik • Araştırma • Çözüm
+                </span>
+
+                <h1>
+                    İhtiyacınızı
+                    <span>doğru ürüne</span>
+                    ve doğru çözüme ulaştırıyoruz.
+                </h1>
+
+                <p class="hero-text">
+                    SARS Grup; kamu kurumlarının ihtiyaç duyduğu
+                    ürün ve hizmetlerin araştırılması, tedarik edilmesi
+                    ve teslim süreçlerinde çözüm odaklı hizmet sunan
+                    Ankara merkezli bir tedarik şirketidir.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-primary"
+                       href="#faaliyetler">
+                        Faaliyet Alanlarımız
+                    </a>
+
+                    <a class="button button-outline"
+                       href="#iletisim">
+                        Bizimle İletişime Geçin
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <aside class="hero-panel">
+
+                <div class="hero-panel-title">
+                    Çözüm yaklaşımımız
+                </div>
+
+                <ul>
+
+                    <li>
+                        İhtiyacın doğru şekilde anlaşılması
+                    </li>
+
+                    <li>
+                        Ürün ve tedarik araştırmasının yapılması
+                    </li>
+
+                    <li>
+                        Uygun tedarik kaynaklarının değerlendirilmesi
+                    </li>
+
+                    <li>
+                        İhale ve satın alma süreçlerine uygun hareket edilmesi
+                    </li>
+
+                    <li>
+                        Ürünün istenen şartlara uygun şekilde temin edilmesi
+                    </li>
+
+                    <li>
+                        Teslimat sürecinin takip edilmesi
+                    </li>
+
+                </ul>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+
+    <!-- KURUMSAL -->
+
+    <section id="kurumsal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Kurumsal
+                </span>
+
+                <h2>
+                    İhtiyaçtan teslimata,
+                    tek noktadan çözüm.
+                </h2>
+
+                <p>
+                    SARS Grup, kamu kurumlarının ve kuruluşların
+                    ihtiyaç duyduğu çeşitli malzeme ve hizmetlerin
+                    temin edilmesine yönelik tedarik süreçlerinde
+                    faaliyet göstermektedir.
+                </p>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        Ankara merkezli şirketimiz, özellikle kamu
+                        kurumlarının gerçekleştirdiği satın alma ve
+                        ihale süreçlerinde ihtiyaç duyulan ürünlerin
+                        araştırılması, uygun kaynaklardan temin edilmesi
+                        ve ilgili kuruluşa ulaştırılması konusunda
+                        çözüm üretmeyi hedeflemektedir.
+                    </p>
+
+                    <p>
+                        Tedarik sürecinde yalnızca mevcut ürünleri
+                        sunmakla kalmayıp, ihtiyaç duyulan ürünün
+                        araştırılması ve uygun tedarik kaynağının
+                        bulunması konusunda da çalışma yürütüyoruz.
+                    </p>
+
+                    <p>
+                        Amacımız; doğru ürünü, doğru şartlarda ve
+                        mümkün olan en uygun tedarik çözümüyle
+                        müşterimize ulaştırmaktır.
+                    </p>
+
+                </div>
+
+
+                <div class="about-highlight">
+
+                    <strong>
+                        SARS Grup'un temel yaklaşımı
+                    </strong>
+
+                    <p>
+                        Bir kurumun ihtiyacı olan malzeme veya hizmet
+                        için gerekli araştırmayı yapmak, uygun
+                        tedarik kaynaklarını bulmak ve süreci
+                        başından sonuna kadar takip ederek
+                        uygulanabilir bir çözüm sunmak.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAALİYETLER -->
+
+    <section id="faaliyetler" class="section-light">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Faaliyet Alanları
+                </span>
+
+                <h2>
+                    Farklı ihtiyaçlara,
+                    araştırmaya dayalı tedarik.
+                </h2>
+
+                <p>
+                    Kurumların ihtiyaç duyduğu ürünleri ve
+                    tedarik çözümlerini ihtiyaç bazında araştırıyor,
+                    uygun seçenekleri değerlendiriyoruz.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <article class="service-card">
+
+                    <span class="service-number">01</span>
+
+                    <h3>
+                        Yedek Parça Tedariki
+                    </h3>
+
+                    <p>
+                        Kamu kurumlarının araç, makine, ekipman
+                        ve çeşitli sistemlerinde ihtiyaç duyduğu
+                        yedek parçaların araştırılması ve tedarik
+                        süreçlerinin yürütülmesi.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">02</span>
+
+                    <h3>
+                        Akü ve Enerji Ürünleri
+                    </h3>
+
+                    <p>
+                        Araçlar, makineler ve farklı kullanım
+                        alanları için ihtiyaç duyulan akü ve
+                        ilgili ürünlerin uygun tedarik kaynaklarından
+                        araştırılması.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">03</span>
+
+                    <h3>
+                        Yağlayıcı ve Kimyasal Ürünler
+                    </h3>
+
+                    <p>
+                        Kurumların teknik ihtiyaçlarına yönelik
+                        yağ, yağlayıcı, bakım ürünleri ve uygun
+                        kimyasal ürünlerin tedarik edilmesine
+                        yönelik çalışmalar.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">04</span>
+
+                    <h3>
+                        Özel Ürün Araştırması
+                    </h3>
+
+                    <p>
+                        Standart ürünlerin dışında ihtiyaç duyulan
+                        malzemelerin araştırılması, uygun ürün ve
+                        tedarik kaynaklarının bulunması.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">05</span>
+
+                    <h3>
+                        İhale ve Tedarik Süreçleri
+                    </h3>
+
+                    <p>
+                        Kamu kurumlarının satın alma ve ihale
+                        süreçlerinde ihtiyaç duyulan ürünlerin
+                        tedarik edilmesine yönelik çalışmalar.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <span class="service-number">06</span>
+
+                    <h3>
+                        Teslimat ve Süreç Takibi
+                    </h3>
+
+                    <p>
+                        Tedarik edilen ürünlerin istenen şartlara
+                        uygun şekilde hazırlanması ve teslimat
+                        sürecinin takip edilmesi.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SÜREÇ -->
+
+    <section id="surec" class="section-blue">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Çalışma Sürecimiz
+                </span>
+
+                <h2>
+                    İhtiyacı anlayıp,
+                    çözümü birlikte oluşturuyoruz.
+                </h2>
+
+                <p>
+                    Her tedarik sürecinin farklı gereksinimleri
+                    olabileceğini biliyor ve çalışmayı ihtiyaca
+                    göre şekillendiriyoruz.
+                </p>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <article class="process-item">
+
+                    <span>ADIM 01</span>
+
+                    <h3>
+                        İhtiyaç Analizi
+                    </h3>
+
+                    <p>
+                        Talep edilen ürün veya hizmetin
+                        özelliklerini ve teknik gereksinimlerini
+                        değerlendiriyoruz.
+                    </p>
+
+                </article>
+
+
+                <article class="process-item">
+
+                    <span>ADIM 02</span>
+
+                    <h3>
+                        Araştırma
+                    </h3>
+
+                    <p>
+                        Ürün, marka, teknik özellik ve tedarik
+                        kaynakları üzerinde araştırma yapıyoruz.
+                    </p>
+
+                </article>
+
+
+                <article class="process-item">
+
+                    <span>ADIM 03</span>
+
+                    <h3>
+                        Tedarik
+                    </h3>
+
+                    <p>
+                        İhtiyaca uygun tedarik seçeneğini
+                        değerlendirerek ürünün temin sürecini
+                        yürütüyoruz.
+                    </p>
+
+                </article>
+
+
+                <article class="process-item">
+
+                    <span>ADIM 04</span>
+
+                    <h3>
+                        Teslimat
+                    </h3>
+
+                    <p>
+                        Tedarik edilen ürünün ilgili kuruluşa
+                        ulaştırılması ve sürecin tamamlanmasını
+                        takip ediyoruz.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- İLKELER -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    Çalışma İlkelerimiz
+                </span>
+
+                <h2>
+                    Güvenilir tedarik,
+                    doğru iletişim.
+                </h2>
+
+                <p>
+                    Uzun vadeli iş ilişkilerinin şeffaf iletişim,
+                    doğru ürün ve zamanında hizmet anlayışıyla
+                    oluşturulacağına inanıyoruz.
+                </p>
+
+            </div>
+
+
+            <div class="principles">
+
+                <article class="principle">
+
+                    <h3>
+                        İhtiyaca Odaklılık
+                    </h3>
+
+                    <p>
+                        Hazır bir ürün listesiyle sınırlı kalmadan,
+                        müşterinin gerçek ihtiyacını anlamaya ve
+                        buna uygun çözüm üretmeye odaklanıyoruz.
+                    </p>
+
+                </article>
+
+
+                <article class="principle">
+
+                    <h3>
+                        Araştırma ve Tedarik
+                    </h3>
+
+                    <p>
+                        İhtiyaç duyulan ürünün bulunması için
+                        farklı tedarik kaynaklarını araştırıyor
+                        ve uygulanabilir seçenekleri değerlendiriyoruz.
+                    </p>
+
+                </article>
+
+
+                <article class="principle">
+
+                    <h3>
+                        Süreç Takibi
+                    </h3>
+
+                    <p>
+                        Tedarik sürecinin yalnızca ürünün bulunmasıyla
+                        bitmediğini biliyor; hazırlık ve teslimat
+                        aşamalarını da takip ediyoruz.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section id="iletisim" class="cta">
+
+        <div class="container">
+
+            <h2>
+                İhtiyacınız olan ürünü birlikte bulalım.
+            </h2>
+
+            <p>
+                Kamu kurumlarının ihtiyaç duyduğu ürün veya
+                hizmetin tedariki konusunda bizimle iletişime
+                geçebilir, ihtiyacınızı paylaşabilirsiniz.
+            </p>
+
+            <a class="button button-primary"
+               href="mailto:info@sars-grup.com">
+                Bize Ulaşın
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <div class="footer-brand">
+                SARS GRUP
+            </div>
+
+            <p class="footer-description">
+                Ankara merkezli tedarik ve çözüm ortağınız.
+                Kamu kurumlarının ihtiyaç duyduğu ürün ve
+                hizmetlerin araştırılması, tedariki ve teslim
+                süreçlerinde çözüm sunuyoruz.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#kurumsal">
+                Kurumsal
+            </a>
+
+            <a href="#faaliyetler">
+                Faaliyet Alanları
+            </a>
+
+            <a href="#surec">
+                Çalışma Sürecimiz
+            </a>
+
+            <a href="#iletisim">
+                İletişim
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="copyright">
+            © 2026 SARS Grup. Tüm hakları saklıdır.
+        </div>
+
+    </div>
+
+</footer>
+
+
 </body>
 </html>
