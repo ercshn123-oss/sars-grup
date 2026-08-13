@@ -2,216 +2,12 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="SARS Grup — Ankara merkezli, kamu kurum ve kuruluşlarının ihtiyaç duyduğu yedek parça, akü, yağ, kimyasal ürün, temizlik malzemeleri ve çeşitli malzeme ve hizmetlerin tedarikinde çözüm ortağı.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0b1f3a">
+  <meta name="theme-color" content="#0a1728">
   <title>SARS Grup | Kamu Tedarik ve Çözüm Ortağı</title>
   <link rel="stylesheet" href="style.css">
-
-  <style id="index-fixes">
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 92px;
-    }
-
-    body {
-      overflow-x: hidden;
-    }
-
-    /* Logo */
-    .brand-logo {
-      width: 58px;
-      height: 58px;
-      object-fit: contain;
-      display: block;
-      flex: 0 0 auto;
-    }
-
-    /* -------------------------------------------------
-       İletişim: beyaz zemin + beyaz yazı sorununu gider
-       Koyu bölüm + açık kart ile yüksek kontrast
-    ------------------------------------------------- */
-    #iletisim.contact-section,
-    .contact-section {
-      background: #0b1f3a !important;
-      color: #e8eef6 !important;
-    }
-
-    #iletisim .section-kicker {
-      color: #d4b15a !important;
-    }
-
-    #iletisim h2 {
-      color: #ffffff !important;
-    }
-
-    #iletisim .contact-lead,
-    #iletisim p {
-      color: #c5d0de !important;
-    }
-
-    #iletisim .contact-card {
-      background: #ffffff !important;
-      color: #0b1f3a !important;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.22);
-    }
-
-    #iletisim .contact-card,
-    #iletisim .contact-card span:not(.contact-label),
-    #iletisim .contact-card a {
-      color: #0b1f3a !important;
-    }
-
-    #iletisim .contact-label {
-      color: #5a6d82 !important;
-      font-weight: 650;
-    }
-
-    #iletisim .contact-card a {
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: color 0.25s ease, border-color 0.25s ease;
-    }
-
-    #iletisim .contact-card a:hover {
-      color: #8a6a1f !important;
-      border-bottom-color: #c9a227;
-    }
-
-    .contact-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-
-    .contact-label {
-      flex: 0 0 auto;
-      min-width: 110px;
-    }
-
-    .contact-label::after {
-      content: ":";
-      margin-left: 4px;
-    }
-
-    .contact-row > a,
-    .contact-row > span:not(.contact-label) {
-      line-height: 1.6;
-    }
-
-    .contact-row.address-row {
-      align-items: flex-start;
-    }
-
-    .contact-row.address-row > span:not(.contact-label) {
-      max-width: 520px;
-    }
-
-    /* -------------------------------------------------
-       Gezinme: hafif, kurumsal geçişler
-    ------------------------------------------------- */
-    .site-header {
-      transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
-    }
-
-    .site-header.is-scrolled {
-      box-shadow: 0 10px 30px rgba(11, 31, 58, 0.12);
-    }
-
-    .nav-links a {
-      position: relative;
-      transition: color 0.25s ease, opacity 0.25s ease;
-    }
-
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 0;
-      height: 2px;
-      background: currentColor;
-      opacity: 0.85;
-      transition: width 0.28s ease;
-    }
-
-    .nav-links a:hover::after,
-    .nav-links a:focus-visible::after,
-    .nav-links a.is-active::after {
-      width: 100%;
-    }
-
-    .button,
-    .footer-links a,
-    .footer-contact a {
-      transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .about-card,
-    .service-card,
-    .solution-item,
-    .process-step,
-    .trust-point,
-    .contact-card {
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-    }
-
-    .about-card:hover,
-    .service-card:hover,
-    .solution-item:hover,
-    .process-step:hover,
-    .trust-point:hover,
-    .contact-card:hover {
-      transform: translateY(-4px);
-    }
-
-    /* Kaydırınca içeriğin yumuşak belirmesi */
-    .js-ready [data-animate] {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-      transition-delay: var(--animate-delay, 0ms);
-    }
-
-    .js-ready [data-animate].is-inview {
-      opacity: 1;
-      transform: none;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      .js-ready [data-animate],
-      .button,
-      .nav-links a,
-      .nav-links a::after,
-      .site-header,
-      .about-card,
-      .service-card,
-      .solution-item,
-      .process-step,
-      .trust-point,
-      .contact-card,
-      .footer-links a,
-      .footer-contact a {
-        transition: none !important;
-        transform: none !important;
-        animation: none !important;
-      }
-
-      .js-ready [data-animate] {
-        opacity: 1 !important;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -225,7 +21,11 @@
       </span>
     </a>
 
-    <nav class="nav-links" aria-label="Ana menü">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+      <span></span>
+    </button>
+
+    <nav id="site-nav" class="nav-links" aria-label="Ana menü">
       <a href="#kurumsal">Kurumsal</a>
       <a href="#hizmetler">Hizmetler</a>
       <a href="#sektorler">Çözüm Alanları</a>
@@ -650,6 +450,8 @@
   (function () {
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var header = document.querySelector(".site-header");
+    var toggle = document.querySelector(".nav-toggle");
+    var nav = document.getElementById("site-nav");
     var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-links a[href^='#']"));
     var sections = navLinks
       .map(function (link) {
@@ -658,6 +460,32 @@
       .filter(Boolean);
 
     document.documentElement.classList.add("js-ready");
+
+    function closeNav() {
+      if (!header || !toggle) return;
+      header.classList.remove("is-nav-open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Menüyü aç");
+    }
+
+    function toggleNav() {
+      if (!header || !toggle) return;
+      var open = header.classList.toggle("is-nav-open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Menüyü kapat" : "Menüyü aç");
+    }
+
+    if (toggle) {
+      toggle.addEventListener("click", toggleNav);
+    }
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", closeNav);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeNav();
+    });
 
     function onScrollHeader() {
       if (!header) return;
@@ -707,7 +535,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });
+      }, { threshold: 0.14, rootMargin: "0px 0px -6% 0px" });
 
       document.querySelectorAll("[data-animate]").forEach(function (el) {
         observer.observe(el);
